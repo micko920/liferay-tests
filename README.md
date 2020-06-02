@@ -158,27 +158,27 @@ The 2 main errors and solutions are list below.
 
 ### Tool versions
 
-Liferay Developer Studio Version: 3.8.1.202004240132-ga2
+    Liferay Developer Studio Version: 3.8.1.202004240132-ga2
 
-blade version 3.9.2.202004101340
+    blade version 3.9.2.202004101340
 
-group: "com.liferay", name: "com.liferay.gradle.plugins.workspace", version: "2.2.11"
-group: "net.saliman", name: "gradle-properties-plugin", version: "1.4.6"
+    group: "com.liferay", name: "com.liferay.gradle.plugins.workspace", version: "2.2.11"
+    group: "net.saliman", name: "gradle-properties-plugin", version: "1.4.6"
 
-------------------------------------------------------------
-Gradle 5.6.4
-------------------------------------------------------------
+    ------------------------------------------------------------
+    Gradle 5.6.4
+    ------------------------------------------------------------
 
-Build time:   2019-11-01 20:42:00 UTC
-Revision:     dd870424f9bd8e195d614dc14bb140f43c22da98
+    Build time:   2019-11-01 20:42:00 UTC
+    Revision:     dd870424f9bd8e195d614dc14bb140f43c22da98
 
-Kotlin:       1.3.41
-Groovy:       2.5.4
-Ant:          Apache Ant(TM) version 1.9.14 compiled on March 12 2019
-JVM:          11.0.2 (Oracle Corporation 11.0.2+9-Debian-3bpo91)
-OS:           Linux 4.9.0-8-amd64 amd64
+    Kotlin:       1.3.41
+    Groovy:       2.5.4
+    Ant:          Apache Ant(TM) version 1.9.14 compiled on March 12 2019
+    JVM:          11.0.2 (Oracle Corporation 11.0.2+9-Debian-3bpo91)
+    OS:           Linux 4.9.0-8-amd64 amd64
 
-$ java --version
-openjdk 11.0.2 2019-01-15
-OpenJDK Runtime Environment (build 11.0.2+9-Debian-3bpo91)
-OpenJDK 64-Bit Server VM (build 11.0.2+9-Debian-3bpo91, mixed mode, sharing)
+    $ java --version
+    openjdk 11.0.2 2019-01-15
+    OpenJDK Runtime Environment (build 11.0.2+9-Debian-3bpo91)
+    OpenJDK 64-Bit Server VM (build 11.0.2+9-Debian-3bpo91, mixed mode, sharing)
