@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-time="0" hostname="localhost" id="Liferay Community Edition Portal 7.3.2 CE GA3" id-set="true" name="Liferay Community Edition Portal 7.3.2 CE GA3" runtime-id="Liferay Community Edition Portal 7.3.2 CE GA3" server-type="com.liferay.ide.server.portal" server-type-id="com.liferay.ide.server.portal" start-timeout="900" stop-timeout="300" timestamp="0"/>
+</servers>

@@ -1,0 +1,767 @@
+TEST_LIFERAY_TARGET_VERSION=7.3.2
+TEST_LIFERAY_BUNDLE_VERSION=7.3.2-ga3
+blade version 3.9.2.202004101340
+buildscript {
+	dependencies {
+		classpath group: "com.liferay", name: "com.liferay.gradle.plugins.workspace", version: "2.2.11"
+		classpath group: "net.saliman", name: "gradle-properties-plugin", version: "1.4.6"
+	}
+
+	repositories {
+		maven {
+			url "https://repository-cdn.liferay.com/nexus/content/groups/public"
+		}
+	}
+}
+
+apply plugin: "net.saliman.properties"
+
+apply plugin: "com.liferay.workspace"
+------------------------------------------------------------
+Gradle 5.6.4
+------------------------------------------------------------
+
+Build time:   2019-11-01 20:42:00 UTC
+Revision:     dd870424f9bd8e195d614dc14bb140f43c22da98
+
+Kotlin:       1.3.41
+Groovy:       2.5.4
+Ant:          Apache Ant(TM) version 1.9.14 compiled on March 12 2019
+JVM:          11.0.2 (Oracle Corporation 11.0.2+9-Debian-3bpo91)
+OS:           Linux 4.9.0-8-amd64 amd64
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :downloadBundle
+> Task :initBundle
+
+BUILD SUCCESSFUL in 15s
+2 actionable tasks: 2 executed
+Successfully created project guestbook in /home-ext/michael-ext/eas-code/lrds/ws/lr-test/clean-gb/modules
+
+> Task :modules:guestbook:guestbook-service:buildService
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.dom4j.io.SAXContentHandler (file:/home/michael/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar) to method com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$LocatorProxy.getEncoding()
+WARNING: Please consider reporting this to the maintainers of org.dom4j.io.SAXContentHandler
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Building Guestbook
+Writing src/main/java/com/liferay/docs/guestbook/service/persistence/impl/GuestbookPersistenceImpl.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/persistence/GuestbookPersistence.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/persistence/GuestbookUtil.java
+Writing src/main/java/com/liferay/docs/guestbook/model/impl/GuestbookModelImpl.java
+Writing src/main/java/com/liferay/docs/guestbook/model/impl/GuestbookBaseImpl.java
+Writing src/main/java/com/liferay/docs/guestbook/model/impl/GuestbookImpl.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/model/GuestbookModel.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/model/Guestbook.java
+Writing src/main/java/com/liferay/docs/guestbook/model/impl/GuestbookCacheModel.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/model/GuestbookWrapper.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/model/GuestbookSoap.java
+Writing src/main/java/com/liferay/docs/guestbook/service/impl/GuestbookLocalServiceImpl.java
+Writing src/main/java/com/liferay/docs/guestbook/service/base/GuestbookLocalServiceBaseImpl.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/GuestbookLocalService.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/GuestbookLocalServiceUtil.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/GuestbookLocalServiceWrapper.java
+Writing src/main/java/com/liferay/docs/guestbook/service/impl/GuestbookServiceImpl.java
+Writing src/main/java/com/liferay/docs/guestbook/service/base/GuestbookServiceBaseImpl.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/GuestbookService.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/GuestbookServiceUtil.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/GuestbookServiceWrapper.java
+Writing src/main/java/com/liferay/docs/guestbook/service/http/GuestbookServiceHttp.java
+Writing src/main/java/com/liferay/docs/guestbook/service/http/GuestbookServiceSoap.java
+Building GuestbookEntry
+Writing src/main/java/com/liferay/docs/guestbook/service/persistence/impl/GuestbookEntryPersistenceImpl.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/persistence/GuestbookEntryPersistence.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/persistence/GuestbookEntryUtil.java
+Writing src/main/java/com/liferay/docs/guestbook/model/impl/GuestbookEntryModelImpl.java
+Writing src/main/java/com/liferay/docs/guestbook/model/impl/GuestbookEntryBaseImpl.java
+Writing src/main/java/com/liferay/docs/guestbook/model/impl/GuestbookEntryImpl.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/model/GuestbookEntryModel.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/model/GuestbookEntry.java
+Writing src/main/java/com/liferay/docs/guestbook/model/impl/GuestbookEntryCacheModel.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/model/GuestbookEntryWrapper.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/model/GuestbookEntrySoap.java
+Writing src/main/java/com/liferay/docs/guestbook/service/impl/GuestbookEntryLocalServiceImpl.java
+Writing src/main/java/com/liferay/docs/guestbook/service/base/GuestbookEntryLocalServiceBaseImpl.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/GuestbookEntryLocalService.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/GuestbookEntryLocalServiceUtil.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/GuestbookEntryLocalServiceWrapper.java
+Writing src/main/java/com/liferay/docs/guestbook/service/impl/GuestbookEntryServiceImpl.java
+Writing src/main/java/com/liferay/docs/guestbook/service/base/GuestbookEntryServiceBaseImpl.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/GuestbookEntryService.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/GuestbookEntryServiceUtil.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/GuestbookEntryServiceWrapper.java
+Writing src/main/java/com/liferay/docs/guestbook/service/http/GuestbookEntryServiceHttp.java
+Writing src/main/java/com/liferay/docs/guestbook/service/http/GuestbookEntryServiceSoap.java
+Writing src/main/resources/META-INF/module-hbm.xml
+Writing src/main/resources/META-INF/portlet-model-hints.xml
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/exception/GuestbookEntryEmailException.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/exception/GuestbookEntryMessageException.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/exception/GuestbookEntryNameException.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/exception/GuestbookNameException.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/exception/NoSuchGuestbookException.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/exception/NoSuchGuestbookEntryException.java
+Writing src/main/java/com/liferay/docs/guestbook/service/persistence/impl/constants/GBPersistenceConstants.java
+Writing src/main/resources/META-INF/sql/indexes.sql
+Writing src/main/resources/META-INF/sql/tables.sql
+Writing src/main/resources/META-INF/sql/tables.sql
+Writing src/main/resources/META-INF/sql/tables.sql
+Writing src/main/resources/service.properties
+
+BUILD SUCCESSFUL in 7s
+1 actionable task: 1 executed
+
+> Task :modules:guestbook:guestbook-service:buildService
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.dom4j.io.SAXContentHandler (file:/home/michael/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar) to method com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$LocatorProxy.getEncoding()
+WARNING: Please consider reporting this to the maintainers of org.dom4j.io.SAXContentHandler
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Building Guestbook
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/GuestbookLocalService.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/GuestbookLocalServiceUtil.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/GuestbookLocalServiceWrapper.java
+Building GuestbookEntry
+Writing src/main/java/com/liferay/docs/guestbook/service/base/GuestbookEntryLocalServiceBaseImpl.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/GuestbookEntryLocalService.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/GuestbookEntryLocalServiceUtil.java
+Writing ../guestbook-api/src/main/java/com/liferay/docs/guestbook/service/GuestbookEntryLocalServiceWrapper.java
+Writing src/main/resources/service.properties
+
+BUILD SUCCESSFUL in 5s
+1 actionable task: 1 executed
+> Task :compileJava NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :jar
+> Task :assemble
+> Task :compileTestJava NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :check UP-TO-DATE
+> Task :build
+> Task :modules:guestbook:guestbook-api:compileJava
+> Task :modules:guestbook:guestbook-api:copyCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-api:buildCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-api:processResources NO-SOURCE
+> Task :modules:guestbook:guestbook-api:transpileJS SKIPPED
+> Task :modules:guestbook:guestbook-api:configJSModules SKIPPED
+> Task :modules:guestbook:guestbook-api:replaceSoyTranslation NO-SOURCE
+> Task :modules:guestbook:guestbook-api:wrapSoyAlloyTemplate SKIPPED
+> Task :modules:guestbook:guestbook-api:classes
+> Task :modules:guestbook:guestbook-api:jar
+> Task :modules:guestbook:guestbook-api:autoUpdateXml SKIPPED
+> Task :modules:guestbook:guestbook-api:assemble
+> Task :modules:guestbook:guestbook-api:compileTestJava NO-SOURCE
+> Task :modules:guestbook:guestbook-api:processTestResources NO-SOURCE
+> Task :modules:guestbook:guestbook-api:testClasses UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:test NO-SOURCE
+> Task :modules:guestbook:guestbook-api:compileTestIntegrationJava NO-SOURCE
+> Task :modules:guestbook:guestbook-api:processTestIntegrationResources NO-SOURCE
+> Task :modules:guestbook:guestbook-api:testIntegrationClasses
+> Task :modules:guestbook:guestbook-api:testIntegration SKIPPED
+> Task :modules:guestbook:guestbook-api:check UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:build
+
+> Task :modules:guestbook:guestbook-service:compileJava
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :modules:guestbook:guestbook-service:copyCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-service:buildCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-service:processResources
+> Task :modules:guestbook:guestbook-service:transpileJS SKIPPED
+> Task :modules:guestbook:guestbook-service:configJSModules SKIPPED
+> Task :modules:guestbook:guestbook-service:replaceSoyTranslation NO-SOURCE
+> Task :modules:guestbook:guestbook-service:wrapSoyAlloyTemplate SKIPPED
+> Task :modules:guestbook:guestbook-service:classes
+> Task :modules:guestbook:guestbook-service:jar
+> Task :modules:guestbook:guestbook-service:autoUpdateXml SKIPPED
+> Task :modules:guestbook:guestbook-service:assemble
+> Task :modules:guestbook:guestbook-service:compileTestJava NO-SOURCE
+> Task :modules:guestbook:guestbook-service:processTestResources NO-SOURCE
+> Task :modules:guestbook:guestbook-service:testClasses UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:test NO-SOURCE
+> Task :modules:guestbook:guestbook-service:compileTestIntegrationJava NO-SOURCE
+> Task :modules:guestbook:guestbook-service:processTestIntegrationResources NO-SOURCE
+> Task :modules:guestbook:guestbook-service:testIntegrationClasses
+> Task :modules:guestbook:guestbook-service:testIntegration SKIPPED
+> Task :modules:guestbook:guestbook-service:check UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:build
+
+BUILD SUCCESSFUL in 5s
+8 actionable tasks: 8 executed
+TEST_LIFERAY_TARGET_VERSION=7.3.2
+TEST_LIFERAY_BUNDLE_VERSION=7.3.2-ga3
+blade version 3.9.2.202004101340
+buildscript {
+	dependencies {
+		classpath group: "com.liferay", name: "com.liferay.gradle.plugins.workspace", version: "2.2.11"
+		classpath group: "net.saliman", name: "gradle-properties-plugin", version: "1.4.6"
+	}
+
+	repositories {
+		maven {
+			url "https://repository-cdn.liferay.com/nexus/content/groups/public"
+		}
+	}
+}
+
+apply plugin: "net.saliman.properties"
+
+apply plugin: "com.liferay.workspace"
+------------------------------------------------------------
+Gradle 5.6.4
+------------------------------------------------------------
+
+Build time:   2019-11-01 20:42:00 UTC
+Revision:     dd870424f9bd8e195d614dc14bb140f43c22da98
+
+Kotlin:       1.3.41
+Groovy:       2.5.4
+Ant:          Apache Ant(TM) version 1.9.14 compiled on March 12 2019
+JVM:          11.0.2 (Oracle Corporation 11.0.2+9-Debian-3bpo91)
+OS:           Linux 4.9.0-8-amd64 amd64
+
+Error: Create
+guestbook is not empty or it is a file. Please clean or delete it then run again
+
+> Task :modules:guestbook:guestbook-service:buildService
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.dom4j.io.SAXContentHandler (file:/home/michael/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar) to method com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$LocatorProxy.getEncoding()
+WARNING: Please consider reporting this to the maintainers of org.dom4j.io.SAXContentHandler
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Building Guestbook
+Building GuestbookEntry
+Writing src/main/resources/service.properties
+
+BUILD SUCCESSFUL in 5s
+1 actionable task: 1 executed
+
+> Task :modules:guestbook:guestbook-service:buildService
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.dom4j.io.SAXContentHandler (file:/home/michael/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar) to method com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$LocatorProxy.getEncoding()
+WARNING: Please consider reporting this to the maintainers of org.dom4j.io.SAXContentHandler
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Building Guestbook
+Building GuestbookEntry
+Writing src/main/resources/service.properties
+
+BUILD SUCCESSFUL in 6s
+1 actionable task: 1 executed
+> Task :compileJava NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+> Task :compileTestJava NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:compileJava UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:copyCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-api:buildCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-api:processResources NO-SOURCE
+> Task :modules:guestbook:guestbook-api:transpileJS SKIPPED
+> Task :modules:guestbook:guestbook-api:configJSModules SKIPPED
+> Task :modules:guestbook:guestbook-api:replaceSoyTranslation NO-SOURCE
+> Task :modules:guestbook:guestbook-api:wrapSoyAlloyTemplate SKIPPED
+> Task :modules:guestbook:guestbook-api:classes UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:jar UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:autoUpdateXml SKIPPED
+> Task :modules:guestbook:guestbook-api:assemble UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:compileTestJava NO-SOURCE
+> Task :modules:guestbook:guestbook-api:processTestResources NO-SOURCE
+> Task :modules:guestbook:guestbook-api:testClasses UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:test NO-SOURCE
+> Task :modules:guestbook:guestbook-api:compileTestIntegrationJava NO-SOURCE
+> Task :modules:guestbook:guestbook-api:processTestIntegrationResources NO-SOURCE
+> Task :modules:guestbook:guestbook-api:testIntegrationClasses
+> Task :modules:guestbook:guestbook-api:testIntegration SKIPPED
+> Task :modules:guestbook:guestbook-api:check UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:build UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:compileJava UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:copyCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-service:buildCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-service:processResources
+> Task :modules:guestbook:guestbook-service:transpileJS SKIPPED
+> Task :modules:guestbook:guestbook-service:configJSModules SKIPPED
+> Task :modules:guestbook:guestbook-service:replaceSoyTranslation NO-SOURCE
+> Task :modules:guestbook:guestbook-service:wrapSoyAlloyTemplate SKIPPED
+> Task :modules:guestbook:guestbook-service:classes
+> Task :modules:guestbook:guestbook-service:jar
+> Task :modules:guestbook:guestbook-service:autoUpdateXml SKIPPED
+> Task :modules:guestbook:guestbook-service:assemble
+> Task :modules:guestbook:guestbook-service:compileTestJava NO-SOURCE
+> Task :modules:guestbook:guestbook-service:processTestResources NO-SOURCE
+> Task :modules:guestbook:guestbook-service:testClasses UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:test NO-SOURCE
+> Task :modules:guestbook:guestbook-service:compileTestIntegrationJava NO-SOURCE
+> Task :modules:guestbook:guestbook-service:processTestIntegrationResources NO-SOURCE
+> Task :modules:guestbook:guestbook-service:testIntegrationClasses
+> Task :modules:guestbook:guestbook-service:testIntegration SKIPPED
+> Task :modules:guestbook:guestbook-service:check UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:build
+
+BUILD SUCCESSFUL in 1s
+8 actionable tasks: 4 executed, 4 up-to-date
+TEST_LIFERAY_TARGET_VERSION=7.3.2
+TEST_LIFERAY_BUNDLE_VERSION=7.3.2-ga3
+blade version 3.9.2.202004101340
+buildscript {
+	dependencies {
+		classpath group: "com.liferay", name: "com.liferay.gradle.plugins.workspace", version: "2.2.11"
+		classpath group: "net.saliman", name: "gradle-properties-plugin", version: "1.4.6"
+	}
+
+	repositories {
+		maven {
+			url "https://repository-cdn.liferay.com/nexus/content/groups/public"
+		}
+	}
+}
+
+apply plugin: "net.saliman.properties"
+
+apply plugin: "com.liferay.workspace"
+------------------------------------------------------------
+Gradle 5.6.4
+------------------------------------------------------------
+
+Build time:   2019-11-01 20:42:00 UTC
+Revision:     dd870424f9bd8e195d614dc14bb140f43c22da98
+
+Kotlin:       1.3.41
+Groovy:       2.5.4
+Ant:          Apache Ant(TM) version 1.9.14 compiled on March 12 2019
+JVM:          11.0.2 (Oracle Corporation 11.0.2+9-Debian-3bpo91)
+OS:           Linux 4.9.0-8-amd64 amd64
+
+Successfully created project guestbook-web in /home-ext/michael-ext/eas-code/lrds/ws/lr-test/clean-gb/modules/guestbook
+> Task :compileJava NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+> Task :compileTestJava NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:compileJava UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:copyCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-api:buildCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-api:processResources NO-SOURCE
+> Task :modules:guestbook:guestbook-api:transpileJS SKIPPED
+> Task :modules:guestbook:guestbook-api:configJSModules SKIPPED
+> Task :modules:guestbook:guestbook-api:replaceSoyTranslation NO-SOURCE
+> Task :modules:guestbook:guestbook-api:wrapSoyAlloyTemplate SKIPPED
+> Task :modules:guestbook:guestbook-api:classes UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:jar UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:autoUpdateXml SKIPPED
+> Task :modules:guestbook:guestbook-api:assemble UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:compileTestJava NO-SOURCE
+> Task :modules:guestbook:guestbook-api:processTestResources NO-SOURCE
+> Task :modules:guestbook:guestbook-api:testClasses UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:test NO-SOURCE
+> Task :modules:guestbook:guestbook-api:compileTestIntegrationJava NO-SOURCE
+> Task :modules:guestbook:guestbook-api:processTestIntegrationResources NO-SOURCE
+> Task :modules:guestbook:guestbook-api:testIntegrationClasses
+> Task :modules:guestbook:guestbook-api:testIntegration SKIPPED
+> Task :modules:guestbook:guestbook-api:check UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:build UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:compileJava UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:copyCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-service:buildCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-service:processResources UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:transpileJS SKIPPED
+> Task :modules:guestbook:guestbook-service:configJSModules SKIPPED
+> Task :modules:guestbook:guestbook-service:replaceSoyTranslation NO-SOURCE
+> Task :modules:guestbook:guestbook-service:wrapSoyAlloyTemplate SKIPPED
+> Task :modules:guestbook:guestbook-service:classes UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:jar UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:autoUpdateXml SKIPPED
+> Task :modules:guestbook:guestbook-service:assemble UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:compileTestJava NO-SOURCE
+> Task :modules:guestbook:guestbook-service:processTestResources NO-SOURCE
+> Task :modules:guestbook:guestbook-service:testClasses UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:test NO-SOURCE
+> Task :modules:guestbook:guestbook-service:compileTestIntegrationJava NO-SOURCE
+> Task :modules:guestbook:guestbook-service:processTestIntegrationResources NO-SOURCE
+> Task :modules:guestbook:guestbook-service:testIntegrationClasses
+> Task :modules:guestbook:guestbook-service:testIntegration SKIPPED
+> Task :modules:guestbook:guestbook-service:check UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:build UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:compileJava
+> Task :modules:guestbook:guestbook-web:copyCSS
+
+> Task :modules:guestbook:guestbook-web:buildCSS
+Using native Sass compiler
+Parsed /META-INF/resources/css/main.scss in 1365ms
+
+> Task :modules:guestbook:guestbook-web:processResources
+> Task :modules:guestbook:guestbook-web:transpileJS SKIPPED
+> Task :modules:guestbook:guestbook-web:configJSModules SKIPPED
+> Task :modules:guestbook:guestbook-web:replaceSoyTranslation NO-SOURCE
+> Task :modules:guestbook:guestbook-web:wrapSoyAlloyTemplate SKIPPED
+> Task :modules:guestbook:guestbook-web:classes
+> Task :modules:guestbook:guestbook-web:jar
+> Task :modules:guestbook:guestbook-web:autoUpdateXml SKIPPED
+> Task :modules:guestbook:guestbook-web:assemble
+> Task :modules:guestbook:guestbook-web:compileTestJava NO-SOURCE
+> Task :modules:guestbook:guestbook-web:processTestResources NO-SOURCE
+> Task :modules:guestbook:guestbook-web:testClasses UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:test NO-SOURCE
+> Task :modules:guestbook:guestbook-web:compileTestIntegrationJava NO-SOURCE
+> Task :modules:guestbook:guestbook-web:processTestIntegrationResources NO-SOURCE
+> Task :modules:guestbook:guestbook-web:testIntegrationClasses
+> Task :modules:guestbook:guestbook-web:testIntegration SKIPPED
+> Task :modules:guestbook:guestbook-web:check UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:build
+> Task :modules:guestbook:guestbook-api:generateJSPJava NO-SOURCE
+> Task :modules:guestbook:guestbook-api:compileJSP NO-SOURCE
+> Task :modules:guestbook:guestbook-service:generateJSPJava NO-SOURCE
+> Task :modules:guestbook:guestbook-service:compileJSP NO-SOURCE
+> Task :modules:guestbook:guestbook-web:generateJSPJava
+> Task :modules:guestbook:guestbook-web:compileJSP
+
+BUILD SUCCESSFUL in 8s
+16 actionable tasks: 10 executed, 6 up-to-date
+> Task :deploy NO-SOURCE
+> Task :dockerDeploy
+> Task :modules:guestbook:guestbook-api:compileJava UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:copyCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-api:buildCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-api:processResources NO-SOURCE
+> Task :modules:guestbook:guestbook-api:transpileJS SKIPPED
+> Task :modules:guestbook:guestbook-api:configJSModules SKIPPED
+> Task :modules:guestbook:guestbook-api:replaceSoyTranslation NO-SOURCE
+> Task :modules:guestbook:guestbook-api:wrapSoyAlloyTemplate SKIPPED
+> Task :modules:guestbook:guestbook-api:classes UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:jar UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:autoUpdateXml SKIPPED
+
+> Task :modules:guestbook:guestbook-api:deploy
+Files of project ':modules:guestbook:guestbook-api' deployed to /home-ext/michael-ext/eas-code/lrds/ws/lr-test/clean-gb/bundles/osgi/modules
+
+> Task :modules:guestbook:guestbook-api:dockerDeploy
+> Task :modules:guestbook:guestbook-api:deployDependencies NO-SOURCE
+> Task :modules:guestbook:guestbook-service:compileJava UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:copyCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-service:buildCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-service:processResources UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:transpileJS SKIPPED
+> Task :modules:guestbook:guestbook-service:configJSModules SKIPPED
+> Task :modules:guestbook:guestbook-service:replaceSoyTranslation NO-SOURCE
+> Task :modules:guestbook:guestbook-service:wrapSoyAlloyTemplate SKIPPED
+> Task :modules:guestbook:guestbook-service:classes UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:jar UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:autoUpdateXml SKIPPED
+
+> Task :modules:guestbook:guestbook-service:deploy
+Files of project ':modules:guestbook:guestbook-service' deployed to /home-ext/michael-ext/eas-code/lrds/ws/lr-test/clean-gb/bundles/osgi/modules
+
+> Task :modules:guestbook:guestbook-service:dockerDeploy
+> Task :modules:guestbook:guestbook-service:deployDependencies NO-SOURCE
+> Task :modules:guestbook:guestbook-web:compileJava UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:copyCSS UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:buildCSS UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:processResources UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:transpileJS SKIPPED
+> Task :modules:guestbook:guestbook-web:configJSModules SKIPPED
+> Task :modules:guestbook:guestbook-web:replaceSoyTranslation NO-SOURCE
+> Task :modules:guestbook:guestbook-web:wrapSoyAlloyTemplate SKIPPED
+> Task :modules:guestbook:guestbook-web:classes UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:jar UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:autoUpdateXml SKIPPED
+
+> Task :modules:guestbook:guestbook-web:deploy
+Files of project ':modules:guestbook:guestbook-web' deployed to /home-ext/michael-ext/eas-code/lrds/ws/lr-test/clean-gb/bundles/osgi/modules
+
+> Task :modules:guestbook:guestbook-web:dockerDeploy
+> Task :modules:guestbook:guestbook-web:deployDependencies NO-SOURCE
+
+BUILD SUCCESSFUL in 751ms
+17 actionable tasks: 7 executed, 10 up-to-date
+Gradle "deploy" task succeeded.
+TEST_LIFERAY_TARGET_VERSION=7.3.2
+TEST_LIFERAY_BUNDLE_VERSION=7.3.2-ga3
+blade version 3.9.2.202004101340
+buildscript {
+	dependencies {
+		classpath group: "com.liferay", name: "com.liferay.gradle.plugins.workspace", version: "2.2.11"
+		classpath group: "net.saliman", name: "gradle-properties-plugin", version: "1.4.6"
+	}
+
+	repositories {
+		maven {
+			url "https://repository-cdn.liferay.com/nexus/content/groups/public"
+		}
+	}
+}
+
+apply plugin: "net.saliman.properties"
+
+apply plugin: "com.liferay.workspace"
+------------------------------------------------------------
+Gradle 5.6.4
+------------------------------------------------------------
+
+Build time:   2019-11-01 20:42:00 UTC
+Revision:     dd870424f9bd8e195d614dc14bb140f43c22da98
+
+Kotlin:       1.3.41
+Groovy:       2.5.4
+Ant:          Apache Ant(TM) version 1.9.14 compiled on March 12 2019
+JVM:          11.0.2 (Oracle Corporation 11.0.2+9-Debian-3bpo91)
+OS:           Linux 4.9.0-8-amd64 amd64
+
+> Task :compileJava NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+> Task :compileTestJava NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:compileJava UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:copyCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-api:buildCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-api:processResources NO-SOURCE
+> Task :modules:guestbook:guestbook-api:transpileJS SKIPPED
+> Task :modules:guestbook:guestbook-api:configJSModules SKIPPED
+> Task :modules:guestbook:guestbook-api:replaceSoyTranslation NO-SOURCE
+> Task :modules:guestbook:guestbook-api:wrapSoyAlloyTemplate SKIPPED
+> Task :modules:guestbook:guestbook-api:classes UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:jar UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:autoUpdateXml SKIPPED
+> Task :modules:guestbook:guestbook-api:assemble UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:compileTestJava NO-SOURCE
+> Task :modules:guestbook:guestbook-api:processTestResources NO-SOURCE
+> Task :modules:guestbook:guestbook-api:testClasses UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:test NO-SOURCE
+> Task :modules:guestbook:guestbook-api:compileTestIntegrationJava NO-SOURCE
+> Task :modules:guestbook:guestbook-api:processTestIntegrationResources NO-SOURCE
+> Task :modules:guestbook:guestbook-api:testIntegrationClasses
+> Task :modules:guestbook:guestbook-api:testIntegration SKIPPED
+> Task :modules:guestbook:guestbook-api:check UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:build UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:compileJava UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:copyCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-service:buildCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-service:processResources UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:transpileJS SKIPPED
+> Task :modules:guestbook:guestbook-service:configJSModules SKIPPED
+> Task :modules:guestbook:guestbook-service:replaceSoyTranslation NO-SOURCE
+> Task :modules:guestbook:guestbook-service:wrapSoyAlloyTemplate SKIPPED
+> Task :modules:guestbook:guestbook-service:classes UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:jar UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:autoUpdateXml SKIPPED
+> Task :modules:guestbook:guestbook-service:assemble UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:compileTestJava NO-SOURCE
+> Task :modules:guestbook:guestbook-service:processTestResources NO-SOURCE
+> Task :modules:guestbook:guestbook-service:testClasses UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:test NO-SOURCE
+> Task :modules:guestbook:guestbook-service:compileTestIntegrationJava NO-SOURCE
+> Task :modules:guestbook:guestbook-service:processTestIntegrationResources NO-SOURCE
+> Task :modules:guestbook:guestbook-service:testIntegrationClasses
+> Task :modules:guestbook:guestbook-service:testIntegration SKIPPED
+> Task :modules:guestbook:guestbook-service:check UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:build UP-TO-DATE
+
+> Task :modules:guestbook:guestbook-web:compileJava
+Note: /home-ext/michael-ext/eas-code/lrds/ws/lr-test/clean-gb/modules/guestbook/guestbook-web/src/main/java/com/liferay/docs/guestbook/portlet/GuestbookPortlet.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :modules:guestbook:guestbook-web:copyCSS
+
+> Task :modules:guestbook:guestbook-web:buildCSS
+Using native Sass compiler
+Parsed /META-INF/resources/css/main.scss in 2ms
+
+> Task :modules:guestbook:guestbook-web:processResources
+> Task :modules:guestbook:guestbook-web:transpileJS SKIPPED
+> Task :modules:guestbook:guestbook-web:configJSModules SKIPPED
+> Task :modules:guestbook:guestbook-web:replaceSoyTranslation NO-SOURCE
+> Task :modules:guestbook:guestbook-web:wrapSoyAlloyTemplate SKIPPED
+> Task :modules:guestbook:guestbook-web:classes
+> Task :modules:guestbook:guestbook-web:jar
+> Task :modules:guestbook:guestbook-web:autoUpdateXml SKIPPED
+> Task :modules:guestbook:guestbook-web:assemble
+> Task :modules:guestbook:guestbook-web:compileTestJava NO-SOURCE
+> Task :modules:guestbook:guestbook-web:processTestResources NO-SOURCE
+> Task :modules:guestbook:guestbook-web:testClasses UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:test NO-SOURCE
+> Task :modules:guestbook:guestbook-web:compileTestIntegrationJava NO-SOURCE
+> Task :modules:guestbook:guestbook-web:processTestIntegrationResources NO-SOURCE
+> Task :modules:guestbook:guestbook-web:testIntegrationClasses
+> Task :modules:guestbook:guestbook-web:testIntegration SKIPPED
+> Task :modules:guestbook:guestbook-web:check UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:build
+> Task :modules:guestbook:guestbook-api:generateJSPJava NO-SOURCE
+> Task :modules:guestbook:guestbook-api:compileJSP NO-SOURCE
+> Task :modules:guestbook:guestbook-service:generateJSPJava NO-SOURCE
+> Task :modules:guestbook:guestbook-service:compileJSP NO-SOURCE
+> Task :modules:guestbook:guestbook-web:generateJSPJava FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':modules:guestbook:guestbook-web:generateJSPJava'.
+> com/liferay/petra/lang/CentralizedThreadLocal
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 2s
+15 actionable tasks: 9 executed, 6 up-to-date
+> Task :compileJava NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+> Task :compileTestJava NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:compileJava UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:copyCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-api:buildCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-api:processResources NO-SOURCE
+> Task :modules:guestbook:guestbook-api:transpileJS SKIPPED
+> Task :modules:guestbook:guestbook-api:configJSModules SKIPPED
+> Task :modules:guestbook:guestbook-api:replaceSoyTranslation NO-SOURCE
+> Task :modules:guestbook:guestbook-api:wrapSoyAlloyTemplate SKIPPED
+> Task :modules:guestbook:guestbook-api:classes UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:jar UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:autoUpdateXml SKIPPED
+> Task :modules:guestbook:guestbook-api:assemble UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:compileTestJava NO-SOURCE
+> Task :modules:guestbook:guestbook-api:processTestResources NO-SOURCE
+> Task :modules:guestbook:guestbook-api:testClasses UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:test NO-SOURCE
+> Task :modules:guestbook:guestbook-api:compileTestIntegrationJava NO-SOURCE
+> Task :modules:guestbook:guestbook-api:processTestIntegrationResources NO-SOURCE
+> Task :modules:guestbook:guestbook-api:testIntegrationClasses
+> Task :modules:guestbook:guestbook-api:testIntegration SKIPPED
+> Task :modules:guestbook:guestbook-api:check UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:build UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:compileJava UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:copyCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-service:buildCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-service:processResources UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:transpileJS SKIPPED
+> Task :modules:guestbook:guestbook-service:configJSModules SKIPPED
+> Task :modules:guestbook:guestbook-service:replaceSoyTranslation NO-SOURCE
+> Task :modules:guestbook:guestbook-service:wrapSoyAlloyTemplate SKIPPED
+> Task :modules:guestbook:guestbook-service:classes UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:jar UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:autoUpdateXml SKIPPED
+> Task :modules:guestbook:guestbook-service:assemble UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:compileTestJava NO-SOURCE
+> Task :modules:guestbook:guestbook-service:processTestResources NO-SOURCE
+> Task :modules:guestbook:guestbook-service:testClasses UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:test NO-SOURCE
+> Task :modules:guestbook:guestbook-service:compileTestIntegrationJava NO-SOURCE
+> Task :modules:guestbook:guestbook-service:processTestIntegrationResources NO-SOURCE
+> Task :modules:guestbook:guestbook-service:testIntegrationClasses
+> Task :modules:guestbook:guestbook-service:testIntegration SKIPPED
+> Task :modules:guestbook:guestbook-service:check UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:build UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:compileJava UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:copyCSS UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:buildCSS UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:processResources UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:transpileJS SKIPPED
+> Task :modules:guestbook:guestbook-web:configJSModules SKIPPED
+> Task :modules:guestbook:guestbook-web:replaceSoyTranslation NO-SOURCE
+> Task :modules:guestbook:guestbook-web:wrapSoyAlloyTemplate SKIPPED
+> Task :modules:guestbook:guestbook-web:classes UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:jar
+> Task :modules:guestbook:guestbook-web:autoUpdateXml SKIPPED
+> Task :modules:guestbook:guestbook-web:assemble
+> Task :modules:guestbook:guestbook-web:compileTestJava NO-SOURCE
+> Task :modules:guestbook:guestbook-web:processTestResources NO-SOURCE
+> Task :modules:guestbook:guestbook-web:testClasses UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:test NO-SOURCE
+> Task :modules:guestbook:guestbook-web:compileTestIntegrationJava NO-SOURCE
+> Task :modules:guestbook:guestbook-web:processTestIntegrationResources NO-SOURCE
+> Task :modules:guestbook:guestbook-web:testIntegrationClasses
+> Task :modules:guestbook:guestbook-web:testIntegration SKIPPED
+> Task :modules:guestbook:guestbook-web:check UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:build
+> Task :modules:guestbook:guestbook-api:generateJSPJava NO-SOURCE
+> Task :modules:guestbook:guestbook-api:compileJSP NO-SOURCE
+> Task :modules:guestbook:guestbook-service:generateJSPJava NO-SOURCE
+> Task :modules:guestbook:guestbook-service:compileJSP NO-SOURCE
+> Task :modules:guestbook:guestbook-web:generateJSPJava
+
+> Task :modules:guestbook:guestbook-web:compileJSP
+Note: /home-ext/michael-ext/eas-code/lrds/ws/lr-test/clean-gb/modules/guestbook/guestbook-web/build/jspc/org/apache/jsp/guestbook/view_jsp.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+BUILD SUCCESSFUL in 2s
+16 actionable tasks: 6 executed, 10 up-to-date
+> Task :deploy NO-SOURCE
+> Task :dockerDeploy UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:compileJava UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:copyCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-api:buildCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-api:processResources NO-SOURCE
+> Task :modules:guestbook:guestbook-api:transpileJS SKIPPED
+> Task :modules:guestbook:guestbook-api:configJSModules SKIPPED
+> Task :modules:guestbook:guestbook-api:replaceSoyTranslation NO-SOURCE
+> Task :modules:guestbook:guestbook-api:wrapSoyAlloyTemplate SKIPPED
+> Task :modules:guestbook:guestbook-api:classes UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:jar UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:autoUpdateXml SKIPPED
+> Task :modules:guestbook:guestbook-api:deploy UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:dockerDeploy UP-TO-DATE
+> Task :modules:guestbook:guestbook-api:deployDependencies NO-SOURCE
+> Task :modules:guestbook:guestbook-service:compileJava UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:copyCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-service:buildCSS NO-SOURCE
+> Task :modules:guestbook:guestbook-service:processResources UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:transpileJS SKIPPED
+> Task :modules:guestbook:guestbook-service:configJSModules SKIPPED
+> Task :modules:guestbook:guestbook-service:replaceSoyTranslation NO-SOURCE
+> Task :modules:guestbook:guestbook-service:wrapSoyAlloyTemplate SKIPPED
+> Task :modules:guestbook:guestbook-service:classes UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:jar UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:autoUpdateXml SKIPPED
+> Task :modules:guestbook:guestbook-service:deploy UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:dockerDeploy UP-TO-DATE
+> Task :modules:guestbook:guestbook-service:deployDependencies NO-SOURCE
+> Task :modules:guestbook:guestbook-web:compileJava UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:copyCSS UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:buildCSS UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:processResources UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:transpileJS SKIPPED
+> Task :modules:guestbook:guestbook-web:configJSModules SKIPPED
+> Task :modules:guestbook:guestbook-web:replaceSoyTranslation NO-SOURCE
+> Task :modules:guestbook:guestbook-web:wrapSoyAlloyTemplate SKIPPED
+> Task :modules:guestbook:guestbook-web:classes UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:jar UP-TO-DATE
+> Task :modules:guestbook:guestbook-web:autoUpdateXml SKIPPED
+
+> Task :modules:guestbook:guestbook-web:deploy
+Files of project ':modules:guestbook:guestbook-web' deployed to /home-ext/michael-ext/eas-code/lrds/ws/lr-test/clean-gb/bundles/osgi/modules
+
+> Task :modules:guestbook:guestbook-web:dockerDeploy
+> Task :modules:guestbook:guestbook-web:deployDependencies NO-SOURCE
+
+BUILD SUCCESSFUL in 927ms
+17 actionable tasks: 2 executed, 15 up-to-date
+Gradle "deploy" task succeeded.
