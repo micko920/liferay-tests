@@ -6,6 +6,7 @@ build the guestbook tutorial.
 This has been tracked through the various minor releases from 7.3.0 to 7.3.2 ga3.
 
 The version tracking tags are:
+
     TEST_LIFERAY_TARGET_VERSION     - The version string used in gradle.properties
     TEST_BLADE_LIFERAY_VERSION      - The version used to pass to the 'blade' command
     TEST_LIFERAY_BUNDLE_VERSION     - The version of the Liferay download bundle to test against
